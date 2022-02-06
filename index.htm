@@ -15,6 +15,46 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" rel="stylesheet">
 
    <style>
+         .hero-bg {
+            background: url(img/hero-bg.jpg) no-repeat center bottom;
+            background-size: cover;
+        }
+
+
+        .navbar-brand {
+            font-size: 32px;
+            font-weight: 500;
+        }
+        .navbar-nav {
+            font-size: 16px;
+        }
+
+        .navbar-item {
+            margin-left: 0px;
+            margin-right: 20px;
+        }
+
+        .navbar-light .nav .nav-link {
+            color: black;
+        }
+
+        .hero .title {
+            position: absolute;
+            width: 485px;
+            height: 149px;
+            left: 119px;
+            top: 163px;
+        }
+
+        .h1 {
+            color: white;
+        }
+    
+        .h2 {
+            color: white;
+        }
+
+       
 
    </style>
    
@@ -23,10 +63,11 @@
   <body>
    
 
-        <div class="container sticky-top">
+
+    <div class="container sticky-top">
          <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
             <a class="navbar-brand" href="#">Xpansion</a>
-            <ul class="nav nav-pills">
+            <ul class="nav">
               <li class="nav-item">
                 <a class="nav-link" href="#scrollspyHeading1">Avaleht</a>
               </li>
@@ -49,35 +90,50 @@
 
           <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">          
           </div>
-         </div>
-           
-    
-
-
-    <div class="hero-bg">
-      <div class="container-fluid">
-          <div class="container hero">
-              <div class="row">
-                  <div class="col">
-                      <div class="row">
-                        <h1 id="scrollspyHeading1">Turundusjuht</h1>
-                      </div>
-                      <div class="row">
-                        <h2>teenusena</h2>
-                      </div>
-                    
-                  </div>
-                  <div class="col">
-                    <img src="img/hero-image.jpg" class="img-fluid" alt="Hero background">
-                  </div>
-
-              </div>
-          </div> 
-      </div>  
     </div>
 
+    <!--hero taust, tekst ja pilt --> 
+
+    <div class="hero-bg mb-5">
+      
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="title">
+                            <div class="row">
+                                <div class="h1">
+                                    <h1 id="scrollspyHeading1">Turundusjuht</h1>
+                                </div>
+                            
+                            </div>
+                            <div class="row">
+                                <div class="h2">
+                                    <h2>teenusena</h2>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="col">
+                        <img src="img/hero-image.jpg" class="img-fluid" alt="Hero background">
+                    </div>
+    
+                </div>
+            </div> 
+        </div>  
+    
+
+    </div>
+           
+
+   
+
+ <!--Teenused --> 
     <div class="container-fluid">
-        <div class="container services">
+        <div class="container">
            <div class="row">
             <h3 id="scrollspyHeading2">Teenused</h3>
            </div> 
@@ -112,7 +168,8 @@
 
     </div>
 
-    <div class="container story">
+    <!--Meie lugu --> 
+    <div class="container">
         <div class="row">
             <div class="text-center">
                 <h3 id="scrollspyHeading3">Meie lugu</h3>
@@ -123,8 +180,9 @@
         </div>
     </div>
 
+     <!--Meeskond --> 
     <div class="container-fluid">
-        <div class="container team">
+        <div class="container">
             <div class="row justify-content-between">
                 <div class="col-4">
                     <img class="img-fluid" src="img/elina-vilja.jpg" alt="Elina Vilja">
@@ -167,6 +225,7 @@
         </div>
     </div>
 
+     <!--Banner --> 
     <div class="container-fluid">
         <div class="container">
             <div class="row">
@@ -175,15 +234,19 @@
                 </div>
 
                 <div class="col-7">
-                    <h4>“Business has only two functions – marketing and innovation."</h4>
-                    <p>–Milan Kundera, Novelist, Playwright and Poet</p>
+                    <div class="quote">
+                        <h4 class="text-start">“Business has only two functions – marketing and innovation."</h4>
+                        <p class="text-start">–Milan Kundera, Novelist, Playwright and Poet</p>
+                    </div>
+                   
                 </div>
 
             </div>
         </div>
     </div>
 
-    <div class="container partnerid">
+     <!--Partnerid --> 
+    <div class="container">
         <div class="row">
             <div class="text-center">
                 <h3 id="scrollspyHeading4">Partnerid</h3>
@@ -212,6 +275,7 @@
         </div>
     </div>
 
+     <!--Kontakt --> 
     <div class="container-fluid">
         <div class="container contact">
             <div class="row">
