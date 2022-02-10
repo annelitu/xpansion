@@ -15,9 +15,15 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" rel="stylesheet">
 
    <style>
-         .hero-bg {
+
+        .hero-bg {
             background: url(img/hero-bg.jpg) no-repeat center bottom;
             background-size: cover;
+        }
+
+        .nav-link:hover {
+            color: white;
+            transition: font-size 1s ease-in-out;
         }
 
 
@@ -34,8 +40,18 @@
             margin-right: 20px;
         }
 
-        .navbar-light .nav .nav-link {
-            color: black;
+        .navbar {
+            background-color: #2D372A;
+        }
+
+        .navbar-brand {
+            color: white;  
+        }
+
+    
+
+        .nav-link {
+            color: white;
         }
 
         .hero .title {
@@ -63,34 +79,37 @@
   <body>
    
 
-
+<div class="container-fluid">
     <div class="container sticky-top">
-         <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
-            <a class="navbar-brand" href="#">Xpansion</a>
-            <ul class="nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#scrollspyHeading1">Avaleht</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#scrollspyHeading2">Teenused</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#scrollspyHeading3">Meie lugu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#scrollspyHeading4">Partnerid</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#scrollspyHeading5">Kontakt</a>
-              </li>              
-                </ul>
-              </li>
-            </ul>
-          </nav>
+        <nav id="navbar-example2" class="navbar px-3">
+           <a class="navbar-brand" href="#">Xpansion</a>
+           <ul class="nav">
+             <li class="nav-item">
+               <a class="nav-link nav-a" href="#scrollspyHeading1">Avaleht</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#scrollspyHeading2">Teenused</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#scrollspyHeading3">Meie lugu</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#scrollspyHeading4">Partnerid</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#scrollspyHeading5">Kontakt</a>
+             </li>              
+               </ul>
+             </li>
+           </ul>
+         </nav>
 
-          <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">          
-          </div>
-    </div>
+         <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">          
+         </div>
+   </div>
+
+</div>
+    
 
     <!--hero taust, tekst ja pilt --> 
 
@@ -133,7 +152,7 @@
 
  <!--Teenused --> 
     <div class="container-fluid">
-        <div class="container">
+        <div class="container py-5">
            <div class="row">
             <h3 id="scrollspyHeading2">Teenused</h3>
            </div> 
