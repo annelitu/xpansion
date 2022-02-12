@@ -18,16 +18,11 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-        .hero-bg {
-            background: url(img/hero-bg.jpg) no-repeat center bottom;
-            background-size: cover;
-        }
-
+    
         .nav-link:hover {
             color: white;
             transition: font-size 1s ease-in-out;
         }
-
 
         .navbar-brand {
             font-size: 32px;
@@ -61,21 +56,18 @@
             color: white;
         }
 
-        .hero .title {
-            position: absolute;
-            width: 485px;
-            height: 149px;
-            left: 119px;
-            top: 163px;
+        .hero {
+            background-color: #2D372A;
         }
 
-        .h1 {
+        .hero h1 {
             color: white;
         }
 
-        .h2 {
+        .hero h2 {
             color: white;
         }
+
 
         .services {
             background-color: #F3EFED;
@@ -85,10 +77,23 @@
             background-color: #F3EFED;
         }
 
-        .quote-bg {
+        .banner-bg {
             background-color: #3E383E;
             color: white;
         }
+
+        .banner-img {
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    
+
+        @media screen and (max-width: 640px) {
+            .banner-img {
+                display: none;
+        }
+        }        
+        
 
         .contact {
             background-color: #2D372A;
@@ -162,40 +167,29 @@
 
     <!--hero taust, tekst ja pilt -->
 
-    <div class="hero-bg mb-5">
+    <div class="container-fluid hero">
+        <div class="container py-5">
 
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="title">
-                            <div class="row">
-                                <div class="h1">
-                                    <h1 id="scrollspyHeading1">Turundusjuht</h1>
-                                </div>
-
-                            </div>
-                            <div class="row">
-                                <div class="h2">
-                                    <h2>teenusena</h2>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                    <div class="col">
-                        <img src="img/hero-image.jpg" class="img-fluid" alt="Hero background">
-                    </div>
-
+            <div class="row">
+                <div class="col-md-5">
+                    <h1 id="scrollspyHeading1" class="pt-5">Turundusjuht</h1>
+                </div>
+                <div class=" col-md-7">         
                 </div>
             </div>
+
+            <div class="row justify-content-between">
+                <div class="col-md-5">
+                    <h2>teenusena</h2>
+                </div>
+                <div class=" col-md-7">  
+                    <img src="img/hero-image.jpg" class="img-fluid" alt="Hero background">
+                </div>
+            </div>
+
         </div>
 
-
     </div>
-
 
 
 
@@ -253,7 +247,7 @@
 
             <div class="row">
                 <div class="text-center">
-                    <p>Meie suur visioon on muuta elu Eestis paremaks. Elinal on kauaaegne kogemus EASis - brändiga
+                    <p>Meie suur visioon on muuta elu Eestis paremaks. Elinal on        kauaaegne kogemus EASis - brändiga
                         töötamine ning turundustiimi juhtimine, Eesti ettevõtete turundusalane toetamine ning Eesti
                         turundamine välisriikidesse. Maarjal on pikaajaline kogemus suurettevõtetes, Telia, Eesti
                         Energia, Tallink ning meediaagentuuris töötamise taust. Maarja on tegelenud nii turundusega kui
@@ -321,15 +315,15 @@
     </div>
 
     <!--Banner -->
-    <div class="container-fluid">
+    <div class="container-fluid banner">
         
-            <div class="row g-0">
-                <div class="col-5">
+            <div class="row">
+                <div class="col-md-5 banner-img">
                     <img class="img-fluid" src="img/banner.jpg" alt="Computer image">
                 </div>
 
-                <div class="col-7 quote-bg">
-                    <div class="quote">
+                <div class="col-md-7 banner-bg">
+                    <div class="banner-text">
                         <h4 class="text-start">“Business has only two functions – marketing and innovation."</h4>
                         <p class="text-start">–Milan Kundera, Novelist, Playwright and Poet</p>
                     </div>
