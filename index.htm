@@ -77,9 +77,18 @@
             background-color: #F3EFED;
         }
 
-        .banner-bg {
+        .banner .row {
+            align-items: center;
             background-color: #3E383E;
+        }
+
+        .banner-bg {
             color: white;
+        }
+
+        .banner-text h2 {
+            text-align: left;
+            margin-left: 4rem;
         }
 
         .banner-img {
@@ -88,11 +97,34 @@
         }
     
 
-        @media screen and (max-width: 640px) {
+        @media screen and (max-width: 767px) {
             .banner-img {
                 display: none;
         }
-        }        
+
+             .banner-text {
+                justify-content: center;
+                align-items: flex-start;
+                padding: 32px 16px;
+                
+        }
+            .banner-text h2 {
+                font-size: 22px;
+            }
+
+            .banner-text p {
+                font-size: 14px;
+            }
+
+        }  
+        
+        @media screen and (min-width: 767px) {
+            .banner-text {
+                justify-content: center;
+                align-items: flex-start;
+                padding-left: 64px;
+        }
+
         
 
         .contact {
@@ -324,8 +356,8 @@
 
                 <div class="col-md-7 banner-bg">
                     <div class="banner-text">
-                        <h4 class="text-start">“Business has only two functions – marketing and innovation."</h4>
-                        <p class="text-start">–Milan Kundera, Novelist, Playwright and Poet</p>
+                        <h4>“Business has only two functions – marketing and innovation."</h4>
+                        <p>–Milan Kundera, Novelist, Playwright and Poet</p>
                     </div>
 
                 </div>
