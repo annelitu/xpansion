@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <style>
+        .nav-link:hover {
+            color: white;
+            transition: font-size 1s ease-in-out;
+        }
+        
+        .navbar-brand {
+            font-size: 32px;
+            font-weight: 500;
+        }
+        
+        .navbar-nav {
+            font-size: 16px;
+        }
+        
+        .navbar-item {
+            margin-left: 0px;
+            margin-right: 20px;
+        }
+        
+        .navbar {
+            background-color: #2D372A;
+        }
+        
+        .navbar-brand {
+            color: white;
+        }
+        
+        .navbar-brand:focus,
+        .navbar-brand:hover {
+            color: white;
+            font-weight: 700;
+        }
+        
+        .nav-link {
+            color: white;
+        }
+        
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2218%22%20height%3D%2212%22%20viewBox%3D%220%200%2018%2012%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M1%2012H17C17.55%2012%2018%2011.55%2018%2011C18%2010.45%2017.55%2010%2017%2010H1C0.45%2010%200%2010.45%200%2011C0%2011.55%200.45%2012%201%2012ZM1%207H17C17.55%207%2018%206.55%2018%206C18%205.45%2017.55%205%2017%205H1C0.45%205%200%205.45%200%206C0%206.55%200.45%207%201%207ZM0%201C0%201.55%200.45%202%201%202H17C17.55%202%2018%201.55%2018%201C18%200.45%2017.55%200%2017%200H1C0.45%200%200%200.45%200%201Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+        }
+        
+        .hero {
+            background-color: #2D372A;
+        }
+        
+        .hero h1 {
+            color: white;
+        }
+        
+        .hero h2 {
+            color: white;
+        }
+        
+        .services {
+            background-color: #F3EFED;
+        }
+        
+        .team {
+            background-color: #F3EFED;
+        }
+        
+        .team a {
+            color: #006699;
+        }
+        
+        .team .bi {
+            font-size: 1.5rem;
+        }
+        
+        .team a:hover {
+            color: #00527A;
+            transition: font-size 1s ease-in-out;
+        }
+        
+        .banner .row {
+            align-items: center;
+            background-color: #3E383E;
+        }
+        /*
+* Banneriga seotud CSS
+*/
+        
+        .banner-bg {
+            color: white;
+        }
+        
+        .banner-text h2 {
+            text-align: left;
+            margin-left: 4rem;
+        }
+        
+        .banner-img {
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+        /*         .banner-img {
+            display: none;
+        }
+         */
+        
+        .banner-text h2 {
+            font-size: 22px;
+        }
+        
+        .banner-text p {
+            font-size: 14px;
+        }
+        
+        .h5 {
+            font-size: 20px;
+        }
+        
+        @media screen and (min-width: 767px) {
+            .services p {
+                font-size: 20px;
+                font-weight: 400;
+            }
+            .story p {
+                font-size: 20px;
+                font-weight: 400;
+            }
+            .team .skills {
+                font-size: 18px;
+                font-weight: 400;
+            }
+            .team p {
+                font-size: 20px;
+                font-weight: 400;
+            }
+            .partners .skills {
+                font-size: 18px;
+                font-weight: 400;
+            }
+            .contact {
+                background-color: #2D372A;
+                color: white;
+            }
+            .contact p {
+                margin-bottom: 0;
+                font-size: 18px;
+                font-weight: 400;
+            }
+            .footer {
+                background-color: #2D372A;
+                color: white;
+            }
+            .footer p {
+                font-size: 18px;
+                font-weight: 400;
+            }
+        }
+        /*
+* Üldine marginite ja paddingute defineerimine
+*/
+        
+        .mb-2 {
+            padding-bottom: 0.5rem!important;
+        }
+        
+        .mb-3 {
+            padding-bottom: 0.75rem!important;
+        }
+        
+        .mb-4 {
+            padding-bottom: 1.5rem!important;
+        }
+        
+        .mb-5 {
+            padding-bottom: 2rem!important;
+        }
+        
+        .mb-6 {
+            padding-bottom: 2.75rem!important;
+        }
+        
+        .mb-7 {
+            padding-bottom: 3.5rem!important;
+        }
+        
+        .py-8 {
+            padding-bottom: 6rem!important;
+            padding-top: 6rem!important;
+        }
+        
+        .pt-8 {
+            padding-top: 6rem!important;
+        }
+    </style>
+
+    <title>Xpansion</title>
+</head>
+
+<body>
+
+
+
+    <nav id="navbar-example2" class="navbar navbar-expand-lg sticky-top px-3">
+
+        <div class="container-fluid">
+            <div class="container">
+
+                <a class="navbar-brand" href="#">Xpansion</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#avaleht">Avaleht</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#teenused">Teenused</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#meie-lugu">Meie lugu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#partnerid">Partnerid</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#kontakt">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+
+
+
+
+        <!--hero taust, tekst ja pilt -->
+
+        <div class="container-fluid hero">
+            <div class="container py-5">
+
+                <div class="row">
+                    <div class="col-md-5">
+                        <h1 id="avaleht" class="pt-5">Turundusjuht</h1>
+                    </div>
+                    <div class=" col-md-7">
+                    </div>
+                </div>
+
+                <div class="row justify-content-between">
+                    <div class="col-md-5">
+                        <h2>teenusena</h2>
+                    </div>
+                    <div class=" col-md-7">
+                        <img src="img/hero-image.jpg" class="img-fluid" alt="Hero background">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!--Teenused -->
+        <div class="container-fluid services">
+            <div class="container py-8">
+                <div class="row mb-7">
+                    <h3 id="teenused">Teenused</h3>
+                </div>
+
+                <div class="row mb-3">
+                    <h5>Brändi loomine või uuendamine</h5>
+                    <p>Luues kaubamärgile tugeva brändi ja identiteedi, saab suurendada brändi tuntust ning nähtavust. Tugeva kontseptsiooniga tagame tulemused ning investeeringutasuve. Lisaks aitame luua logo, sloganit, disaini, kodulehte või muid CVI-ga
+                        seotud lahendusi.</p>
+                </div>
+
+                <div class="row mb-3">
+                    <h5>Kommunikatsiooni- ja turundusstrateegia</h5>
+                    <p>Loome kommunikatsiooni- ja turundustrateegia läbi, mille ettevõtte äri kasvatada. Koostame turundusplaani, seame turundusalased eesmärgid, mida hiljem saab monitoorida ja optimeerida.</p>
+                </div>
+
+                <div class="row mb-3">
+                    <h5>Kampaaniad</h5>
+                    <p>Lähtuvalt turundusstrateegiast juhime ka kampaaniad ning taktikalisi tegevusi. Määrame ettevõttega koos kampaaniale sihtrühmad, eesmärgid ning koostame meediaplaani. Jälgime pidevalt ning optimeerime kanaleid ja tulemusi jooskvalt.</p>
+                </div>
+
+                <div class="row mb-3">
+                    <h5>Brändi loomine või uuendamine</h5>
+                    <p>Meediaplaani luues soovime jõuda õige sihtgrupini, kasutades täpset sihtimist ning õigeid kanaleid. Oleme spetsialiseerunud digimeedia planeerimisele, kuid vajadusel pakume ka suuremat meedia miksi. Lisaks pakume ka Google Adwordsi
+                        teenust.
+                    </p>
+                </div>
+
+                <div class="row">
+                    <h5>Loovlahendused</h5>
+                    <p>Loovlahendustega keskendume ettevõtte toodete või teenuste välimusele. Muudame tooted/teenused atraktiivseks. Lisaks aitame kujundada ning toota reklaammaterjale.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--Meie lugu -->
+        <div class="container story py-8">
+            <div class="row">
+                <div class="text-center mb-7">
+                    <h3 id="meie-lugu">Meie lugu</h3>
+                </div>
+
+                <div class="row">
+                    <div class="text-center">
+                        <p>Meie suur visioon on muuta elu Eestis paremaks. Elinal onnkauaaegne kogemus EASis - brändiga töötamine ning turundustiimi juhtimine, Eesti ettevõtete turundusalane toetamine ning Eesti turundamine välisriikidesse. Maarjal on pikaajaline
+                            kogemus suurettevõtetes, Telia, Eesti Energia, Tallink ning meediaagentuuris töötamise taust. Maarja on tegelenud nii turundusega kui ka äri poolega - pakkumiste juhtimine nii äri- kui ka eraklientidele.</p>
+
+                        <p>Pika aja jooksul on tekkinud meil ühine missioon ja visioon. Tahame, et ettevõtted kasvaksid, saaksid suurendada oma müüki ning olla klientide jaoks atraktiivsed, läbi mille kasvab ka Eesti majandus.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!--Meeskond -->
+        <div class="container-fluid team">
+            <div class="container py-8">
+                <div class="row justify-content-between mb-6">
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="img/elina-vilja.jpg" alt="Elina Vilja">
+                    </div>
+
+                    <div class="col-md-7">
+                        <div class="row">
+                            <h5>Elina Vilja <a href="https://www.linkedin.com/in/elina-vilja-544b0b57/"><i class="bi bi-linkedin"></i></a></h5>
+                        </div>
+                        <div class="row mb-2">
+                            <p class="skills">Turundus | Bränding | Teenusedisain | Protsessidisain</p>
+                        </div>
+                        <div class="row">
+                            <p>Elina on varasemalt töötanud Ettevõtte Arenduse Sihtasutuses nii turundusosakonna juhina, protsessi juhina, brändijuhina kui ka juhtinud erinevaid projekte.</p>
+                            <p>Suurimad projektid EAS-is: turundusosakonna tsentraliseerimine ja Eesti brändi loomine.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-between">
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="img/maarja-putsep.jpg" alt="Maarja Pütsep">
+                    </div>
+
+                    <div class="col-md-7">
+                        <div class="row">
+                            <div class="col">
+                                <h5>Maarja Pütsep</h5>
+                            </div>
+                            <div class="col">
+                                <a href="https://www.linkedin.com/in/maarja-p%C3%BCtsep-58b9a67a/"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="row mb-2">
+                            <p class="skills">Turundus | Väärtuspakkumine | Müük | Kliendikogemus</p>
+                        </div>
+
+                        <div class="row">
+                            <p>Maarja on varasemalt töötanud Tallinkis grupiüleste pakkumiste juhtimise ja koordineerimisega ning Club One lojaalsussüsteemi strateegilise ja arendusliku juhtimisega. Lisaks juhtinud Eesti müüki, teenuseid ja segmenti. Eesti
+                                Energias vastutas ärikliendi turunduse eest. Telias tegeles ärikliendi segmendijuhtimisega ning ärikliendi turundusjuhtimisega. Meedia taust tuleneb Mindsharest, kus Maarja juhtis digikampaaniaid.</p>
+
+                            <p>Suurimad projektid: grupiüleste pakkumiste juhtimise strateegia loomine Tallinkis. Ärikliendi turunduskampaaniaga Digiteo auhinna võitmine Telias.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Banner -->
+        <div class="container-fluid banner">
+
+            <div class="row">
+                <div class="col-md-5 d-none d-lg-flex">
+                    <img class="img-fluid " src="img/banner.jpg" alt="Computer image">
+                </div>
+
+                <div class="d-none d-lg-flex col-lg-1"></div>
+                <div class=" col-md-7 col-lg-5 banner-bg ">
+                    <div class="banner-text ">
+                        <h4 class="mb-6 ">“Business has only two functions – marketing and innovation."</h4>
+                        <p>–Milan Kundera, Novelist, Playwright and Poet</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <!--Partnerid -->
+        <div class=" container partners py-8 ">
+            <div class="row ">
+                <div class="text-center mb-7 ">
+                    <h3 id="partnerid ">Partnerid</h3>
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class="col-md-4 ">
+                    <img class="img-fluid mb-3 " src="img/reelika-lepp.jpg " alt="Reelika Lepp ">
+                    <h5>Reelika Lepp</h5>
+                    <p class="skills ">PR & kommunikatsioon</p>
+                </div>
+
+                <div class="col-md-4 ">
+                    <img class="img-fluid mb-3 " src="img/tanel-drui.jpg " alt="Tanel Drui ">
+                    <h5>Tanel Drui</h5>
+                    <p class="skills ">Disain ja loovlahendused</p>
+                </div>
+
+                <div class="col-md-4 ">
+                    <img class="img-fluid mb-3 " src="img/sondra-lahesaare.jpg " alt="Sondra Lahesaare ">
+                    <h5>Sondra Lahesaare</h5>
+                    <p class="skills ">Meedia planeerija</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!--Kontakt -->
+        <div class="container-fluid contact ">
+            <div class="container pt-8 ">
+                <div class="row pb-4 ">
+                    <div class="col align-self-start ">
+
+                        <div class="row mb-3 ">
+                            <h3 id="kontakt ">Kontakt</h3>
+                        </div>
+
+                        <div class="row mb-2 ">
+                            <p>Xpansion OÜ</p>
+                        </div>
+
+                        <div class="row ">
+                            <p>Kesklinna linnaosa, Paadi 7, 11234</p>
+                            <p>reg. nr.: 11051957</p>
+                            <p>KMKR: EE102143894</p>
+                            <p>info@xpansion.ee</p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid footer ">
+            <div class="container mt-6 ">
+                <div class="row mb-4 ">
+                    <div class="col align-self-start ">
+                        <p>&copy;2022 Xpansion. All rights reserved</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+
+
+</body>
+
+</html>
