@@ -15,6 +15,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" rel="stylesheet">
 
     <style>
@@ -77,10 +78,23 @@
             background-color: #F3EFED;
         }
 
+        .team a {
+             color: #006699;
+        }
+
+        .team a:hover {
+            color: #00527A;
+            transition: font-size 1s ease-in-out;
+        }
+
         .banner .row {
             align-items: center;
             background-color: #3E383E;
         }
+
+/*
+* Banneriga seotud CSS
+*/
 
         .banner-bg {
             color: white;
@@ -123,10 +137,14 @@
         }  
         
         @media screen and (min-width: 767px) {
-            .banner-text {
-                justify-content: center;
-                align-items: flex-start;
-                padding-left: 64px;
+            .services p {
+                font-size: 20px;
+                font-weight: 400;  
+            }
+            
+            .story p {
+                font-size: 20px;
+                font-weight: 400;
             }
 
             .team .skills {
@@ -139,24 +157,45 @@
                 font-weight: 400;
             }
 
+            .banner-text {
+                justify-content: center;
+                align-items: flex-start;
+                padding-left: 64px;
+            }
+
+            .partners .skills {
+                font-size: 18px;
+                font-weight: 400;
+            }
+
+            .contact {
+            background-color: #2D372A;
+            color: white;
+        }
+
+            .contact p {
+                margin-bottom: 0;
+                font-size: 18px;
+                font-weight: 400;
+            }
+
+            .footer {
+                background-color: #2D372A;
+                color: white;
+            }
+
+            .footer p {
+                font-size: 18px;
+                font-weight: 400;
+            }
+
+
     }
 
-        .contact {
-            background-color: #2D372A;
-            color: white;
-        }
-
-        .contact p {
-            margin-bottom: 0;
-        }
-
-        .footer {
-            background-color: #2D372A;
-            color: white;
-        }
-
-
-
+       
+/*
+* Üldine marginite ja paddingute defineerimine
+*/
         .mb-2 {
         padding-bottom: 0.5rem!important;
         }
@@ -216,19 +255,19 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#scrollspyHeading1">Avaleht</a>
+                            <a class="nav-link active" href="#avaleht">Avaleht</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#scrollspyHeading2">Teenused</a>
+                            <a class="nav-link" href="#teenused">Teenused</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#scrollspyHeading3">Meie lugu</a>
+                            <a class="nav-link" href="#meie-lugu">Meie lugu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#scrollspyHeading4">Partnerid</a>
+                            <a class="nav-link" href="#partnerid">Partnerid</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#scrollspyHeading5">Kontakt</a>
+                            <a class="nav-link" href="#kontakt">Kontakt</a>
                         </li>
                     </ul>
                 </div>
@@ -248,7 +287,7 @@
 
             <div class="row">
                 <div class="col-md-5">
-                    <h1 id="scrollspyHeading1" class="pt-5">Turundusjuht</h1>
+                    <h1 id="avaleht" class="pt-5">Turundusjuht</h1>
                 </div>
                 <div class=" col-md-7">         
                 </div>
@@ -273,7 +312,7 @@
     <div class="container-fluid services">
         <div class="container py-8">
             <div class="row mb-7">
-                <h3 id="scrollspyHeading2">Teenused</h3>
+                <h3 id="teenused">Teenused</h3>
             </div>
 
             <div class="row mb-3">
@@ -315,10 +354,10 @@
     </div>
 
     <!--Meie lugu -->
-    <div class="container py-8">
+    <div class="container story py-8">
         <div class="row">
             <div class="text-center mb-7">
-                <h3 id="scrollspyHeading3">Meie lugu</h3>
+                <h3 id="meie-lugu">Meie lugu</h3>
             </div>
 
             <div class="row">
@@ -345,6 +384,7 @@
                 <div class="col-md-7">
                     <div class="row">
                         <h5>Elina Vilja</h5>
+                        <p><a href="https://www.linkedin.com/in/elina-vilja-544b0b57/"><i class="bi bi-linkedin"></i></a></p>
                     </div>
                     <div class="row mb-2">
                         <p class="skills">Turundus | Bränding | Teenusedisain | Protsessidisain</p>
@@ -364,10 +404,16 @@
 
                 <div class="col-md-7">
                     <div class="row">
-                        <h5>Maarja Pütsep</h5>
+                        <div class="col">
+                            <h5>Maarja Pütsep</h5>
+                        </div>
+                        <div class="col">
+                            <a href="https://www.linkedin.com/in/maarja-p%C3%BCtsep-58b9a67a/"><i class="bi bi-linkedin"></i></a>
+                        </div>
                     </div>
+
                     <div class="row mb-2">
-                        <p>Turundus | Väärtuspakkumine | Müük | Kliendikogemus</p>
+                        <p class="skills">Turundus | Väärtuspakkumine | Müük | Kliendikogemus</p>
                     </div>
 
                     <div class="row">
@@ -406,10 +452,10 @@
     </div>
 
     <!--Partnerid -->
-    <div class="container py-8">
+    <div class="container partners py-8">
         <div class="row">
             <div class="text-center mb-7">
-                <h3 id="scrollspyHeading4">Partnerid</h3>
+                <h3 id="partnerid">Partnerid</h3>
             </div>
         </div>
 
@@ -417,19 +463,19 @@
             <div class="col-md-4">
                 <img class="img-fluid mb-3" src="img/reelika-lepp.jpg" alt="Reelika Lepp">
                 <h5>Reelika Lepp</h5>
-                <p>PR & kommunikatsioon</p>
+                <p class="skills">PR & kommunikatsioon</p>
             </div>
 
             <div class="col-md-4">
                 <img class="img-fluid mb-3" src="img/tanel-drui.jpg" alt="Tanel Drui">
                 <h5>Tanel Drui</h5>
-                <p>Disain ja loovlahendused</p>
+                <p class="skills">Disain ja loovlahendused</p>
             </div>
 
             <div class="col-md-4">
                 <img class="img-fluid mb-3" src="img/sondra-lahesaare.jpg" alt="Sondra Lahesaare">
                 <h5>Sondra Lahesaare</h5>
-                <p>Meedia planeerija</p>
+                <p class="skills">Meedia planeerija</p>
             </div>
 
         </div>
@@ -442,7 +488,7 @@
                 <div class="col align-self-start">
 
                     <div class="row mb-3">
-                        <h3 id="scrollspyHeading5">Kontakt</h3>
+                        <h3 id="kontakt">Kontakt</h3>
                     </div>
 
                     <div class="row mb-2">
@@ -478,13 +524,10 @@
 
 
 
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
 
 </body>
-
 </html>
