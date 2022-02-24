@@ -1,5 +1,10 @@
 # xpansion
 
+## ver 2022-02-24
+- uued sisutekstid
+- linkedin ikoonid lingitud linkedin URL-idega team ja partners sektsioonis
+- footeris uued kontaktandmed
+
 ## ver 2022-02-18 
 - team sektsioonis fondi defineerimine desktopile
 - copyright muudatus
