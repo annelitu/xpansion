@@ -1,5 +1,11 @@
 # xpansion
 
+## ver 2022-03-02
+- uus hero jaotus ja responsivness
+- uus hero pilt ja team pildid
+- mobile first fondid ja desktop fontide defineerimine CSS-is
+- mobile vs desktop paddingud
+
 ## ver 2022-02-24
 - uued sisutekstid
 - linkedin ikoonid lingitud linkedin URL-idega team ja partners sektsioonis
