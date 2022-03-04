@@ -1,0 +1,355 @@
+
+    
+/*
+* Navbariga seotud CSS
+*/ 
+
+ 
+   .nav-link:hover {
+        color: white;
+        text-decoration: underline;
+        transition: font-size 1s ease-in-out;
+    }
+   
+    .navbar-brand {
+        font-size: 32px;
+        font-weight: 500;
+        color: white;
+    }
+
+    .navbar-nav {
+        font-size: 16px;
+    }
+ 
+    .navbar-item {
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+
+
+    .navbar-brand:focus, .navbar-brand:hover {
+          color: white;
+          font-weight: 700;
+          transition: font-size 1s ease-in-out;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2218%22%20height%3D%2212%22%20viewBox%3D%220%200%2018%2012%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M1%2012H17C17.55%2012%2018%2011.55%2018%2011C18%2010.45%2017.55%2010%2017%2010H1C0.45%2010%200%2010.45%200%2011C0%2011.55%200.45%2012%201%2012ZM1%207H17C17.55%207%2018%206.55%2018%206C18%205.45%2017.55%205%2017%205H1C0.45%205%200%205.45%200%206C0%206.55%200.45%207%201%207ZM0%201C0%201.55%200.45%202%201%202H17C17.55%202%2018%201.55%2018%201C18%200.45%2017.55%200%2017%200H1C0.45%200%200%200.45%200%201Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+    }
+
+
+
+/*
+* Hero'ga seotud CSS
+*/
+
+
+    .hero {
+        background-color: #2D372A;
+        color: white;
+    }
+
+    .hero .top {
+        background-color: #2D372A;
+    }
+
+    .hero2 .bottom {
+        background-color: white;
+        height: 2rem;
+    }
+
+
+
+/*
+* Teenustega seotud CSS
+*/
+
+
+    .services {
+        background-color: #F3EFED;
+    }
+
+/*
+* Meeskond sektsiooniga seotud CSS
+*/
+
+    .team {
+        background-color: #F3EFED;
+    }
+
+    .team .bi {
+        font-size: 1.5rem;
+    }
+
+    .team a {
+         color: #006699;
+    }
+
+    .team a:hover {
+        color: #00527A;
+        transition: font-size 1s ease-in-out;
+    }
+
+    .maarja-img .elina-img {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+
+/*
+* Banneriga seotud CSS
+*/
+
+    .banner-img {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .banner .row {
+        align-items: center;
+        background-color: #3E383E;
+    }
+
+    .banner-text {
+        color: white;
+    }
+
+
+    .banner-img {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+/*
+* Partneritega seotud CSS
+*/
+
+    .partners .bi {
+        font-size: 1.5rem;
+    }
+
+    .partners a {
+         color: #006699;
+    }
+
+    .partners a:hover {
+        color: #00527A;
+        transition: font-size 1s ease-in-out;
+    }
+
+/*
+* Kontakt ja footeriga seotud CSS
+*/
+
+    .contact {
+        background-color: #2D372A;
+        color: white;
+    }
+
+    .footer {
+            background-color: #2D372A;
+            color: white;
+        }
+
+/* 
+* Fondid kui ekraan on <=768px, md ekraan
+*/    
+
+    @media screen and (max-width: 767px) {
+        
+        
+        .hero .col-sm-5 {
+            padding-top: 2.25rem;
+            padding-bottom: 2.25rem ;
+        }
+
+        .team .col-md-4 {
+            padding-bottom: 1.5rem;
+        }
+
+        .team .col-md-7 {
+            padding-bottom: 2.25rem;
+        }
+
+        .team .col-md-7 .maarja-img {
+            padding-bottom: 0 !important;
+        }
+
+       
+        .skills p {
+            font-size: 0.875rem;
+        }
+       
+        .partners .col-md-4 {
+            padding-bottom: 2.25rem ;
+        }
+
+    
+        .mb-4 {
+            padding-bottom: 0.75rem!important;
+        }
+
+        .mb-5 {
+            padding-bottom: 2.25rem!important;
+        }
+
+        .mb-6 {
+            padding-bottom: 2.25rem!important;
+        }
+
+        .mb-7 {
+            padding-bottom: 2.25rem!important;
+        }
+
+        .mb-8 {
+            margin-bottom: 2rem !important;
+        }
+
+        .mt-8 {
+            margin-top: 2rem;
+        }
+
+        .py-8 {
+            padding-bottom: 2rem!important;
+            padding-top: 2rem!important;
+        }
+    
+        .pt-8 {
+            padding-top: 2rem!important;
+        }
+
+    }  
+
+/*
+* Fondid kui ekraan on suurem kui 768px
+*/
+    
+    @media screen and (min-width: 768px) {
+
+       
+
+        .hero .col-md-5 {
+            padding-top: 6rem;
+        }
+
+        .hero .col-md-7 {
+            padding-top: 6rem;
+        }
+
+        .h1 {
+            font-size: 56px;
+            font-weight: 700;
+            color: white;
+        }
+
+        .h2 {
+            font-size: 48px;             
+            font-weight: 400;
+            color: white;
+        }
+
+        .h3 {
+            font-size: 40px;
+            font-weight: 500;
+        }
+
+        .h4 {
+            font-size: 32px;
+            font-weight: 500;
+        }
+
+        .h5 {
+            font-size: 26px;
+            font-weight: 500;
+        }
+
+        .services p {
+            font-size: 20px;
+            font-weight: 400;  
+        }
+        
+        .story p {
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .skills p {
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .team p {
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .banner-text {
+            justify-content: center;
+            align-items: flex-start;
+            padding-left: 64px;
+        }
+
+        .partners p {
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+      
+        .contact p {
+            margin-bottom: 0;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+
+        .footer p {
+            font-size: 18px;
+            font-weight: 400;
+        }
+/*
+* Üldine marginite ja paddingute defineerimine
+*/
+        .mb-2 {
+            padding-bottom: 0.5rem!important;
+        }
+
+
+        .mb-3 {
+            padding-bottom: 0.75rem!important;
+        }
+
+        .mb-4 {
+             padding-bottom: 1.5rem!important;
+        }
+
+        .mb-5 {
+            padding-bottom: 2.25rem!important;
+        }
+
+        .mb-6 {
+            padding-bottom: 2.75rem!important;
+        }
+
+        .mb-7 {
+            padding-bottom: 3.5rem!important;
+        }
+
+        .py-8 {
+            padding-bottom: 6rem!important;
+            padding-top: 6rem!important;
+        }
+
+        .pt-7 {
+            padding-top: 3.5rem!important;
+        }
+    
+        .pt-8 {
+            padding-top: 6rem!important;
+        }
+
+
+}
+
+   
+
+    
