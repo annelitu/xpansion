@@ -1,5 +1,9 @@
 # xpansion
 
+## ver 2022-03-04
+- scrollspy positioning (pealkirja tekstid ei jää enam peitu)
+- footeri järelt eemaldatud valge tühi margin ala
+
 ## ver 2022-03-02
 - uus hero jaotus ja responsivness
 - uus hero pilt ja team pildid
