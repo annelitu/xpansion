@@ -3,6 +3,11 @@
 ## ver 2022-03-04
 - scrollspy positioning (pealkirja tekstid ei jää enam peitu)
 - footeri järelt eemaldatud valge tühi margin ala
+- css liigutamine style.css faili
+- banneri teksti alignment responsive veebiga, paddingud sm ekraani peal
+- Footeri korrastamine, top paddingut vähemaks
+- üleliigse banneri ja navbar css koodi eemaldamine
+- vana hero html koodi eemaldamine
 
 ## ver 2022-03-02
 - uus hero jaotus ja responsivness
