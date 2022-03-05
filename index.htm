@@ -17,20 +17,36 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    
-    <link rel="stylesheet" href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="css/bootstrap.min.css" rel="stylesheet">
+
+
+<!--     <link rel="stylesheet" href="css/app.css" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="css/style.css" rel="stylesheet"> 
+
+    <style>
+        body {
+            position: relative;
+        }
+
+        .navbar-dark .navbar-nav .active>.nav-link,
+        .navbar-dark .navbar-nav .nav-link.active,
+        .navbar-dark .navbar-nav .nav-link.show,
+        .navbar-dark .navbar-nav .show>.nav-link {
+            color: pink;
+        }
+    </style>
 
 
     <title>Xpansion</title>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
 
 
 
-    <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top px-2">
+    <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top px-2">
 
         <div class="container-fluid">
             <div class="container">
@@ -65,19 +81,15 @@
         </div>
     </nav>
 
-    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-   
-    
-
     <div class="container-fluid hero" id="avaleht">
         <div class="container">
 
             <div class="row top justify-content-between">
                 <!--teksti veerg heros, 3 rida veerus-->
                 <div class="col-md-5 col-sm-5">
-                 <div class="row">
+                    <div class="row">
                         <h1>Turundusjuht</h1>
-                    </div> 
+                    </div>
 
                     <div class="row">
                         <h2>teenusena</h2>
@@ -116,27 +128,35 @@
 
             <div class="row mb-3">
                 <h5>Brändi loomine või uuendamine</h5>
-                <p>Luues kaubamärgile tugeva brändi ja identiteedi, saab suurendada brändi tuntust ning nähtavust. Tugeva kontseptsiooniga aitame tagada tulemused ning investeeringu tasuvus. Tegeleme ka logo, disaini, kodulehe loome ja muu CVI-ga seotud lahendustega.</p>
+                <p>Luues kaubamärgile tugeva brändi ja identiteedi, saab suurendada brändi tuntust ning nähtavust.
+                    Tugeva kontseptsiooniga aitame tagada tulemused ning investeeringu tasuvus. Tegeleme ka logo,
+                    disaini, kodulehe loome ja muu CVI-ga seotud lahendustega.</p>
             </div>
 
             <div class="row mb-3">
                 <h5>Kommunikatsiooni- ja turundusstrateegia</h5>
-                <p>Loome kommunikatsiooni- ja turundusstrateegia, läbi mille ettevõtte äri kasvatada. Koostame turundusplaani, seame turundusalased eesmärgid, mida hiljem saab monitoorida ja optimeerida.</p>
+                <p>Loome kommunikatsiooni- ja turundusstrateegia, läbi mille ettevõtte äri kasvatada. Koostame
+                    turundusplaani, seame turundusalased eesmärgid, mida hiljem saab monitoorida ja optimeerida.</p>
             </div>
 
             <div class="row mb-3">
                 <h5>Kampaaniad</h5>
-                <p>Lähtuvalt turundusstrateegiast juhime ka kampaaniad ning taktikalisi tegevusi. Määrame ettevõttega koos kampaaniale sihtrühmad, eesmärgid ning koostame meediaplaani. Jälgime pidevalt ja optimeerime kanaleid ning tulemusi jooskvalt.</p>
+                <p>Lähtuvalt turundusstrateegiast juhime ka kampaaniad ning taktikalisi tegevusi. Määrame
+                    ettevõttega koos kampaaniale sihtrühmad, eesmärgid ning koostame meediaplaani. Jälgime pidevalt
+                    ja optimeerime kanaleid ning tulemusi jooskvalt.</p>
             </div>
 
             <div class="row mb-3">
                 <h5>Meediaplaneerimine</h5>
-                <p>Meediaplaani luues soovime jõuda õige sihtgrupini, kasutades täpset sihtimist ning õigeid kanaleid. Oleme spetsialiseerunud digimeedia planeerimisele, kuid vajadusel pakume ka suuremat meedia miksi.</p>
+                <p>Meediaplaani luues soovime jõuda õige sihtgrupini, kasutades täpset sihtimist ning õigeid
+                    kanaleid. Oleme spetsialiseerunud digimeedia planeerimisele, kuid vajadusel pakume ka suuremat
+                    meedia miksi.</p>
             </div>
 
             <div class="row">
                 <h5>Loovlahendused</h5>
-                <p>Loovlahendustega keskendume ettevõtte toodete või teenuste välimusele, muutes tooted/teenused atraktiivseks. Aitame kujundada ning toota reklaammaterjale.</p>
+                <p>Loovlahendustega keskendume ettevõtte toodete või teenuste välimusele, muutes tooted/teenused
+                    atraktiivseks. Aitame kujundada ning toota reklaammaterjale.</p>
             </div>
 
         </div>
@@ -147,14 +167,20 @@
     <div class="container story py-8" id="meie-lugu">
         <div class="row">
             <div class="text-center mb-7">
-                <h3 >Meie lugu</h3>
+                <h3>Meie lugu</h3>
             </div>
 
             <div class="row">
                 <div class="text-center">
-                    <p>Meie suur visioon on muuta elu Eestis paremaks. Elinal on kauaaegne kogemus EASis - brändiga töötamine ning turundustiimi juhtimine, Eesti ettevõtete turundusalane toetamine ning Eesti turundamine välisriikidesse. Maarjal on pikaajaline kogemus suurettevõtetes, Telia, Eesti Energia, Tallink ning meediaagentuuris töötamise taust. Maarja on tegelenud nii turundusega kui ka äri poolega - pakkumiste juhtimine nii äri- kui ka eraklientidele.</p>
+                    <p>Meie suur visioon on muuta elu Eestis paremaks. Elinal on kauaaegne kogemus EASis - brändiga
+                        töötamine ning turundustiimi juhtimine, Eesti ettevõtete turundusalane toetamine ning Eesti
+                        turundamine välisriikidesse. Maarjal on pikaajaline kogemus suurettevõtetes, Telia, Eesti
+                        Energia, Tallink ning meediaagentuuris töötamise taust. Maarja on tegelenud nii turundusega
+                        kui ka äri poolega - pakkumiste juhtimine nii äri- kui ka eraklientidele.</p>
 
-                    <p>Pika aja jooksul on tekkinud meil ühine missioon ja visioon. Tahame, et ettevõtted kasvaksid, saaksid suurendada oma müüki ning olla klientide jaoks atraktiivsed, läbi mille kasvab ka Eesti majandus.</p>
+                    <p>Pika aja jooksul on tekkinud meil ühine missioon ja visioon. Tahame, et ettevõtted kasvaksid,
+                        saaksid suurendada oma müüki ning olla klientide jaoks atraktiivsed, läbi mille kasvab ka
+                        Eesti majandus.</p>
                 </div>
 
             </div>
@@ -173,7 +199,8 @@
 
                 <div class="col-md-7 elina-img">
                     <div class="row">
-                        <h5>Elina Vilja <a href="https://www.linkedin.com/in/elina-vilja-544b0b57/"><i class="bi bi-linkedin"></i></a></h5>
+                        <h5>Elina Vilja <a href="https://www.linkedin.com/in/elina-vilja-544b0b57/"><i
+                                    class="bi bi-linkedin"></i></a></h5>
                     </div>
 
                     <div class="row mb-2">
@@ -181,8 +208,10 @@
                     </div>
 
                     <div class="row">
-                        <p>Elina on varasemalt töötanud Ettevõtte Arenduse Sihtasutuses nii turundusosakonna juhina, protsessi juhina, brändijuhina kui ka juhtinud erinevaid projekte.</p>
-                        <p>Suurimad projektid EAS-is: turundusosakonna tsentraliseerimine ja Eesti brändi loomine.</p>
+                        <p>Elina on varasemalt töötanud Ettevõtte Arenduse Sihtasutuses nii turundusosakonna juhina,
+                            protsessi juhina, brändijuhina kui ka juhtinud erinevaid projekte.</p>
+                        <p>Suurimad projektid EAS-is: turundusosakonna tsentraliseerimine ja Eesti brändi loomine.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -193,8 +222,9 @@
                 </div>
 
                 <div class="col-md-7 maarja-img">
-                    <div class="row">                        
-                        <h5>Maarja Pütsep <a href="https://www.linkedin.com/in/maarja-p%C3%BCtsep-58b9a67a/"><i class="bi bi-linkedin"></i></a></h5>
+                    <div class="row">
+                        <h5>Maarja Pütsep <a href="https://www.linkedin.com/in/maarja-p%C3%BCtsep-58b9a67a/"><i
+                                    class="bi bi-linkedin"></i></a></h5>
                     </div>
 
                     <div class="row mb-2">
@@ -202,9 +232,15 @@
                     </div>
 
                     <div class="row">
-                        <p>Maarja on varasemalt töötanud Tallinkis grupiüleste pakkumiste juhtimise ja koordineerimisega ning Club One lojaalsussüsteemi strateegilise ja arendusliku juhtimisega. Lisaks juhtinud Eesti müüki, teenuseid ja segmenti. Eesti Energias vastutas ärikliendi turunduse eest. Telias tegeles ärikliendi segmendijuhtimisega ning ärikliendi turundusjuhtimisega. Meedia taust tuleneb Mindsharest, kus Maarja juhtis digikampaaniaid.</p>
+                        <p>Maarja on varasemalt töötanud Tallinkis grupiüleste pakkumiste juhtimise ja
+                            koordineerimisega ning Club One lojaalsussüsteemi strateegilise ja arendusliku
+                            juhtimisega. Lisaks juhtinud Eesti müüki, teenuseid ja segmenti. Eesti Energias vastutas
+                            ärikliendi turunduse eest. Telias tegeles ärikliendi segmendijuhtimisega ning ärikliendi
+                            turundusjuhtimisega. Meedia taust tuleneb Mindsharest, kus Maarja juhtis
+                            digikampaaniaid.</p>
 
-                        <p>Suurimad projektid: grupiüleste pakkumiste juhtimise strateegia loomine Tallinkis. Ärikliendi turunduskampaaniaga Digiteo auhinna võitmine Telias.</p>
+                        <p>Suurimad projektid: grupiüleste pakkumiste juhtimise strateegia loomine Tallinkis.
+                            Ärikliendi turunduskampaaniaga Digiteo auhinna võitmine Telias.</p>
                     </div>
                 </div>
             </div>
@@ -213,23 +249,23 @@
 
     <!--Banner -->
     <div class="container-fluid banner justify-content-center">
-        
-            <div class="row">
-                <div class="col-md-5 banner-img">
-                    <img class="img-fluid d-none d-md-inline" src="img/banner.jpg" alt="Computer image">
-                </div>
 
-
-                <div class="col-md-7 col-lg-5">
-                    <div class="banner-text text-sm-center text-md-left mt-8 mb-8">
-                        <h4 class="mb-6">“Business has only two functions – marketing and innovation."</h4>
-                        <p>–Milan Kundera, Novelist, Playwright and Poet</p>
-                    </div>
-                </div>
-
-                
-
+        <div class="row">
+            <div class="col-md-5 banner-img">
+                <img class="img-fluid d-none d-md-inline" src="img/banner.jpg" alt="Computer image">
             </div>
+
+
+            <div class="col-md-7 col-lg-5">
+                <div class="banner-text text-sm-center text-md-left mt-8 mb-8">
+                    <h4 class="mb-6">“Business has only two functions – marketing and innovation."</h4>
+                    <p>–Milan Kundera, Novelist, Playwright and Poet</p>
+                </div>
+            </div>
+
+
+
+        </div>
 
     </div>
 
@@ -243,7 +279,9 @@
 
         <div class="row">
             <div class="text-center mb-6">
-                <p>Koos meeskonna ja partneritega pakume teile personaalset lähenemist ning professionaalset teenust. Meie partneriteks on disainerid, loovjuht, copywriter, meediaplaneerija, suhtekorraldaja ning veebiarendaja.</p>
+                <p>Koos meeskonna ja partneritega pakume teile personaalset lähenemist ning professionaalset
+                    teenust. Meie partneriteks on disainerid, loovjuht, copywriter, meediaplaneerija,
+                    suhtekorraldaja ning veebiarendaja.</p>
             </div>
 
         </div>
@@ -251,19 +289,22 @@
         <div class="row">
             <div class="col-md-4">
                 <img class="img-fluid mb-3" src="img/reelika-lepp.jpg" alt="Reelika Lepp">
-                <h5>Reelika Lepp <a href="https://www.linkedin.com/in/reelika-lepp-4496a280/"><i class="bi bi-linkedin"></i></a></h5>
+                <h5>Reelika Lepp <a href="https://www.linkedin.com/in/reelika-lepp-4496a280/"><i
+                            class="bi bi-linkedin"></i></a></h5>
                 <p class="skills">PR & kommunikatsioon</p>
             </div>
 
             <div class="col-md-4">
                 <img class="img-fluid mb-3" src="img/tanel-drui.jpg" alt="Tanel Drui">
-                <h5>Tanel Drui <a href="https://www.linkedin.com/in/taneldrui/"><i class="bi bi-linkedin"></i></a></h5>
+                <h5>Tanel Drui <a href="https://www.linkedin.com/in/taneldrui/"><i class="bi bi-linkedin"></i></a>
+                </h5>
                 <p class="skills">Disain ja loovlahendused</p>
             </div>
 
             <div class="col-md-4">
                 <img class="img-fluid mb-3" src="img/sondra-lahesaare.jpg" alt="Sondra Lahesaare">
-                <h5>Sondra Lahesaare <a href="https://www.linkedin.com/in/sondra-lahesaare-ba6a74102/"><i class="bi bi-linkedin"></i></a></h5>
+                <h5>Sondra Lahesaare <a href="https://www.linkedin.com/in/sondra-lahesaare-ba6a74102/"><i
+                            class="bi bi-linkedin"></i></a></h5>
                 <p class="skills">Meedia planeerija</p>
             </div>
 
@@ -276,39 +317,27 @@
             <div class="row pb-4">
                 <div class="col align-self-start">
 
-                    <div class="row mb-3">
-                        <h3>Kontakt</h3>
-                    </div>
 
-                    <div class="row">
-                        <p>MP Sessions OÜ</p>
-                        <p>Karsti 7, Tallinn, Harjumaa, 11625</p>
-                        <p>reg. nr.: 14035456</p>
-                        <p>maarja.pytsep@gmail.com</p>
-                    </div>
+                    <h3 class="mb-3">Kontakt</h3>
 
+                    <p>MP Sessions OÜ</p>
+                    <p>Karsti 7, Tallinn, Harjumaa, 11625</p>
+                    <p>reg. nr.: 14035456</p>
+                    <p>maarja.pytsep@gmail.com</p>
+
+                    <p class="mt-3">&copy;2022 Xpansion. All rights reserved</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid footer">
-        <div class="container mt-6">
-            <div class="row">
-                <div class="col align-self-start">
-                    <p>&copy;2022 Xpansion. All rights reserved</p>
-                </div>
-            </div>
 
-        </div>
 
-    </div>
-
-</div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
 </body>
+
 </html>
