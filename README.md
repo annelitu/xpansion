@@ -8,7 +8,7 @@
 - main menu item nüüd bold ja valge, kui active.
 - H1 ja H2 fontide suurused md ja 900px suurematele ekraanidele
 - vana CSS koodi eemaldamine
-- *NB! md ekraanil fondid ei rakendu, sellega on mingi probleem
+- *NB! md ekraanil fondid ei rakendu, sellega on mingi probleem*
 
 ## ver 2022-03-04
 - scrollspy positioning (pealkirja tekstid ei jää enam peitu)
