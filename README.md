@@ -1,5 +1,12 @@
 # xpansion
 
+## ver 2022-02-11
+- bootstrap builderi kaudu defineeirtud spacerid 
+- breakpointidele vastavad paddingud ja marginid
+- puudu olevad inter fondi raskused 400, 500, 700
+- xs ekraani paddingute defineerimine läbi media query
+- main menu item nüüd bold ja valge, kui active.
+
 ## ver 2022-03-04
 - scrollspy positioning (pealkirja tekstid ei jää enam peitu)
 - footeri järelt eemaldatud valge tühi margin ala
