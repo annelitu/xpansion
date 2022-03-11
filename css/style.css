@@ -106,10 +106,7 @@ body {
         transition: font-size 1s ease-in-out;
     }
 
-    .maarja-img .elina-img {
-        padding: 0 !important;
-        margin: 0 !important;
-    }
+    
 
 
 /*
@@ -168,83 +165,56 @@ body {
         }
 
 /* 
-* Fondid kui ekraan on <=768px, md ekraan
+* Fondid kui ekraan on väiksem kui 576px
 */    
 
-   @media screen and (max-width: 767px) {
+   @media screen and (max-width: 765px) {
 
     .py-xs-4 {
         padding: 2rem 1rem;
     }
+
+    .py-xs-5 {
+        padding: 2.25rem;
+    }
+
+    .pt-xs-5 {
+        padding-top: 2.25rem ;
+    }
+
+    .mb-xs-3 {
+        padding-bottom: 1.5rem;
+    }
+
+    .mt-xs-3 {
+        padding-top: 1.5rem;
+    }
+
+    .mb-xs-5 {
+        margin-bottom: 2.25rem;
+    }
+
+    .h2 {
+        font-weight: 400 !important;
+    }
         
-   /*     
-        .hero .col-sm-5 {
-            padding-top: 2.25rem;
-            padding-bottom: 2.25rem ;
-        }
+    .banner-text p {
+        margin-bottom: 0;
+    }
 
-        .team .col-md-4 {
-            padding-bottom: 1.5rem;
-        }
+    .text-xs-center {
+        text-align: center;
+    }
 
-        .team .col-md-7 {
-            padding-bottom: 2.25rem;
-        }
+    .skills p {
+        font-size: 0.875rem;
+    }
 
-        .team .col-md-7 .maarja-img {
-            padding-bottom: 0 !important;
-        }
+    .contact p {
+        margin-bottom: 0 !important;
+    } 
 
-       
-        .skills p {
-            font-size: 0.875rem;
-        }
-       
-        .partners .col-md-4 {
-            padding-bottom: 2.25rem ;
-        }
-
-        .contact p {
-            margin-bottom: 0;
-        }
-
-    
-        .mb-4 {
-            padding-bottom: 0.75rem!important;
-        }
-
-        .mb-5 {
-            padding-bottom: 2.25rem!important;
-        }
-
-        .mb-6 {
-            padding-bottom: 2.25rem!important;
-        }
-
-        .mb-7 {
-            padding-bottom: 2.25rem!important;
-        }
-
-        .mb-8 {
-            margin-bottom: 2rem !important;
-        }
-
-        .mt-8 {
-            margin-top: 2rem;
-        }
-
-        .py-8 {
-            padding-bottom: 2rem!important;
-            padding-top: 2rem!important;
-        }
-    
-        .pt-8 {
-            padding-top: 2rem!important;
-        }
-    */
-
-    }  
-
+}  
 
 
 /*
@@ -254,22 +224,12 @@ body {
     @media screen and (min-width: 768px) {
 
 
-     /*   .hero .col-md-5 {
-            padding-top: 6rem;
-        }
-
-        .hero .col-md-7 {
-            padding-top: 6rem;
-        }*/
-
-        .h1 {
-            font-size: 3.5rem !important;
-            font-weight: 700 !important;
+        .hero h1 {
+            font-weight: 700;
             color: white;
         }
 
-        .h2 {
-            font-size: 3rem;             
+        .hero h2 {             
             font-weight: 400;
             color: white;
         }
@@ -313,7 +273,6 @@ body {
             justify-content: center;
             align-items: flex-start;
             padding-left: 4rem;
-            padding-right: 7.75rem;
         }
 
         .partners p {
@@ -329,59 +288,22 @@ body {
         }
 
 
-        /*
-        * Üldine marginite ja paddingute defineerimine
+    }
 
-        .mb-1 {
-            padding-bottom: 0.5rem!important;
+    @media screen and (min-width: 993px) {
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: white;
         }
 
-
-        .mb-2 {
-            padding-bottom: 0.75rem!important;
+        .hero h2 {
+            font-size: 2.75rem;             
+            font-weight: 400;
+            color: white;
         }
-
-        .mb-3 {
-             padding-bottom: 1.5rem!important;
-        }
-
-        .mb-4 {
-            padding-bottom: 2rem!important;
-        }
-
-        .mb-5 {
-            padding-bottom: 2.25rem!important;
-        }
-
-        .mb-6 {
-            padding-bottom: 2.75rem!important;
-        }
-
-        .mb-7 {
-            padding-bottom: 3rem!important;
-        }
-
-        .mb-8 {
-            padding-bottom: 3.5rem!important;
-        }
-
-        .py-9 {
-            padding-bottom: 6rem!important;
-            padding-top: 6rem!important;
-        }
-
-        .pt-7 {
-            padding-top: 3.5rem!important;
-        }
-    
-        .pt-8 {
-            padding-top: 6rem!important;
-        }
-
-        */
 
 
     }
 
-    
-    
