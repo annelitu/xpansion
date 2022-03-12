@@ -5,6 +5,8 @@
 - Teenused -> 'Võta ühendust' nupp
 - Nupu hover, active CSS + mailto lingiga sidumine
 - Nupu raadiuse määramine
+- fontide suurused MD ja suuremale ekraanile
+- Navbrand font-family: Roboto Mono
 
 ## ver 2022-03-11
 - bootstrap builderi kaudu defineeirtud spacerid 
