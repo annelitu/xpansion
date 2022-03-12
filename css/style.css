@@ -103,12 +103,12 @@ body {
         text-decoration: underline;
     }
 
-    .btn-secondary:focus {
+  /*  .btn-secondary:focus {
         color: #fff;
         background-color: #3E383E;
         border-color: #3E383E;
         box-shadow: 0 0 0 0.1252rem rgb(130 138 145 / 50%);
-    }
+    } */
 
     .services a {
         color: white;
