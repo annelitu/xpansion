@@ -163,10 +163,6 @@ body {
     }
 
 
-    .banner-img {
-        padding: 0 !important;
-        margin: 0 !important;
-    }
 
 /*
 * Partneritega seotud CSS
@@ -186,7 +182,7 @@ body {
     }
 
 /*
-* Kontakt ja footeriga seotud CSS
+* Kontaktiga seotud CSS
 */
 
     .contact {
@@ -194,13 +190,10 @@ body {
         color: white;
     }
 
-    .footer {
-            background-color: #2D372A;
-            color: white;
-        }
+ 
 
 /* 
-* Fondid kui ekraan on väiksem kui 576px
+* Fondid kui ekraan on väiksem kui 765px
 */    
 
    @media screen and (max-width: 765px) {
@@ -269,18 +262,13 @@ body {
             color: white;
         }
 
-        .h3 {
-            font-size: 2.5rem;
-            font-weight: 500;
-        }
-
-        .h4 {
+        .services h3 {
             font-size: 2rem;
             font-weight: 500;
         }
 
-        .h5 {
-            font-size: 1.625rem;
+        .services h5 {
+            font-size: 1.5rem;
             font-weight: 500;
         }
 
@@ -288,18 +276,32 @@ body {
             font-size: 1.25rem;
             font-weight: 400;  
         }
-        
+
         .btn {
             width: 17.5rem;
+        }
+
+        .btn-secondary {
+            font-size: 1.25rem;
+        }
+
+        .story h3 {
+            font-size: 2rem;
+            font-weight: 500;
         }
 
         .story p {
             font-size: 1.25rem;
             font-weight: 400;
         }
-/*siin skills font suurus ei tööta*/
-        .skills p {
-            font-size: 1rem;
+
+        .team h5 {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        .team .skills {
+            font-size: 1.125rem;
             font-weight: 400;
         }
 
@@ -308,10 +310,22 @@ body {
             font-weight: 400;
         }
 
+        .banner h4 {
+            font-size: 1.625rem;
+            font-weight: 500;
+        }
+
         .banner-text {
             justify-content: center;
             align-items: flex-start;
             padding-left: 4rem;
+            font-size: 1.125rem;
+            font-weight: 400;
+        }
+
+        .partners h3 {
+            font-size: 2rem;
+            font-weight: 500;
         }
 
         .partners p {
@@ -319,6 +333,20 @@ body {
             font-weight: 400;
         }
 
+        .partners h5 {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        .partners .skills {
+            font-size: 1.125rem;
+            font-weight: 400;
+        }
+
+        .contact h3 {
+            font-size: 2rem;
+            font-weight: 500;
+        }
       
         .contact p {
             margin-bottom: 0 !important;
@@ -342,8 +370,6 @@ body {
             font-weight: 400;
             color: white;
         }
-
-
 
     }
 
