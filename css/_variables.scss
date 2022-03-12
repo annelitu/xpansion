@@ -12,3 +12,4 @@ $h1-font-size: $font-size-base * 2.25;
 $h2-font-size: $font-size-base * 2;
 $h5-font-size: $font-size-base * 1.25;
 $spacers: map-merge( ( 0: 0, 1: ($spacer * .5), 2: ($spacer * .75), 3: ($spacer * 1.5), 4: ($spacer * 2), 5: ($spacer * 2.25), 6: ($spacer * 2.75), 7: ($spacer * 3), 8: ($spacer * 3.5), 9: ($spacer * 6), 10: ($spacer * 7.5) ), () );
+$secondary: #3E383E

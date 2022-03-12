@@ -85,6 +85,36 @@ body {
         background-color: #F3EFED;
     }
 
+    .btn-secondary {
+        color: #fff;
+        background-color: #3E383E;
+        border-color: #3E383E;
+        font-weight: 700;
+    }
+
+    .btn-secondary:hover {
+        color: #fff;
+        background-color: #514C51;
+        text-decoration: underline;
+    }
+
+    .btn-secondary:focus {
+        color: #fff;
+        background-color: #3E383E;
+        border-color: #3E383E;
+        box-shadow: 0 0 0 0.1252rem rgb(130 138 145 / 50%);
+    }
+
+    .services a {
+        color: white;
+    }
+
+    .services a:hover {
+        color: white;
+        text-decoration-color: white;
+    }
+
+
 /*
 * Meeskond sektsiooniga seotud CSS
 */
@@ -254,6 +284,10 @@ body {
             font-weight: 400;  
         }
         
+        .btn {
+            width: 17.5rem;
+        }
+
         .story p {
             font-size: 1.25rem;
             font-weight: 400;
