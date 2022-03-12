@@ -222,7 +222,11 @@ body {
         margin-bottom: 2.25rem;
     }
 
-    .h2 {
+    .hero h1 {
+        font-weight: 700 !important;
+    }
+
+    .hero h2 {
         font-weight: 400 !important;
     }
         
@@ -232,10 +236,6 @@ body {
 
     .text-xs-center {
         text-align: center;
-    }
-
-    .skills p {
-        font-size: 0.875rem;
     }
 
     .contact p {
