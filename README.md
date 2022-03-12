@@ -3,7 +3,8 @@
 ## ver 2022-03-12
 - Partnerite stackimine md vs lg ekraanil
 - Teenused -> 'Võta ühendust' nupp
-- 'Võta ühendust' nupu hover, active CSS + mailto lingiga sidumine
+- Nupu hover, active CSS + mailto lingiga sidumine
+- Nupu raadiuse määramine
 
 ## ver 2022-03-11
 - bootstrap builderi kaudu defineeirtud spacerid 
