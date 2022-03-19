@@ -1,5 +1,12 @@
 # xpansion
 
+## ver 2022-03-19
+- xs ekraanisuuruste eemaldamine, st xs ja sm asendus pt-5 etc
+- banneri image on teksti poolega sama kõrgune, kui ekraan kokku liigub
+- mailto lingi nupuks muutmine, et responsive keraaniga läheks nupp ekraani laiuseks
+- pets-krat vana html faili eemaldamine
+- vana style.css eemaldamine ja style-pets.css ringi nimetamine style.css
+
 ## ver 2022-03-12
 - Partnerite stackimine md vs lg ekraanil
 - Teenused -> 'Võta ühendust' nupp
