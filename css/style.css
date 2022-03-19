@@ -196,38 +196,14 @@ body {
 * Fondid kui ekraan on väiksem kui 765px
 */    
 
-   @media screen and (max-width: 765px) {
+ 
 
-    .py-xs-4 {
-        padding: 2rem 1rem;
+    .container .hero h1 {
+        font-weight: 700;
     }
 
-    .py-xs-5 {
-        padding: 2.25rem;
-    }
-
-    .pt-xs-5 {
-        padding-top: 2.25rem ;
-    }
-
-    .mb-xs-3 {
-        padding-bottom: 1.5rem;
-    }
-
-    .mt-xs-3 {
-        padding-top: 1.5rem;
-    }
-
-    .mb-xs-5 {
-        margin-bottom: 2.25rem;
-    }
-
-    .hero h1 {
-        font-weight: 700 !important;
-    }
-
-    .hero h2 {
-        font-weight: 400 !important;
+    .container .hero h2 {
+        font-weight: 400;
     }
         
     .banner-text p {
@@ -242,7 +218,7 @@ body {
         margin-bottom: 0 !important;
     } 
 
-}  
+
 
 
 /*
