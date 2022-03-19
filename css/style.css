@@ -100,6 +100,7 @@ body {
     .btn-secondary:hover {
         color: #fff;
         background-color: #514C51;
+        border-color: #3E383E;
         text-decoration: underline;
     }
 
@@ -196,29 +197,22 @@ body {
 * Fondid kui ekraan on väiksem kui 765px
 */    
 
- 
+.hero h1 {
+    font-weight: 700;
+}
 
-    .container .hero h1 {
-        font-weight: 700;
-    }
-
-    .container .hero h2 {
-        font-weight: 400;
-    }
-        
-    .banner-text p {
-        margin-bottom: 0;
-    }
-
-    .text-xs-center {
-        text-align: center;
-    }
-
-    .contact p {
-        margin-bottom: 0 !important;
-    } 
+.hero h2 {
+    font-weight: 400;
+}
+    
+.banner-text p {
+    margin-bottom: 0;
+}
 
 
+.contact p {
+    margin-bottom: 0;
+} 
 
 
 /*
